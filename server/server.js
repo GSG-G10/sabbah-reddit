@@ -4,5 +4,6 @@ const app = express();
 const PORT = 3000;
 
 app.listen(PORT, () => {
-    console.log('server is listening on http://localhost:3000');
-})
+  // eslint-disable-next-line no-console
+  console.log('server is listening on http://localhost:3000');
+});
