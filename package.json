@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/GSG-G10/sabbah-reddit#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.5",
     "env2": "^2.2.2",
     "express": "^4.17.1",
     "pg": "^8.7.1"
