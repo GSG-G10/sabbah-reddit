@@ -1,6 +1,7 @@
 const { sign } = require('jsonwebtoken');
 const { addUserQu } = require('../database/queries');
 const { hashPassword } = require('./hashPassword');
+const {createSession} = require('./index')
 
 const createUser = (req, res) => {
   const {
@@ -21,14 +22,6 @@ const createUser = (req, res) => {
       console.log(obj);
       addUserQu(obj)
         .then(() => {
-          const createSession = (userName, emailInput) => {
-            const cookiePayload = {
-              userName,
-              emailInput,
-            };
-            const cookie = sign(cookiePayload, process.env.SECRET_KEY);
-            return cookie;
-          };
           res.cookie('token', createSession(username, email), { httpOnly: true, secure: true });
           res.cookie('username', username);
           res.redirect('/');

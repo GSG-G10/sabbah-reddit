@@ -6,6 +6,8 @@ const getCommentsQu = require('./get-comments');
 const getPostsQu = require('./get-posts');
 const getUsersQu = require('./get-users');
 const getUsersPosts = require('./get-users-posts');
+const getUser = require('./get-user');
+const checkIfMember = require('./checkIfMember')
 
 module.exports = {
   addCommentQu,
@@ -16,4 +18,6 @@ module.exports = {
   getPostsQu,
   getUsersQu,
   getUsersPosts,
+  getUser,
+  checkIfMember,
 };
