@@ -1,5 +1,12 @@
+const { getUsersPosts } = require('../database/queries');
+
 const getProfile = (req, res) => {
-  res.json({ msg: 'Hello from profile' });
+  const { username } = req.cookies;
+  getUsersPosts(username).then((data) => {
+    res.json(data);
+  }).catch((err) => {
+    console.log(err.message);
+  });
 };
 
 module.exports = getProfile;
