@@ -4,7 +4,9 @@ const login = require('./login');
 const logout = require('./logout');
 const createSession = require('./create-session');
 const getPosts = require('./get-posts');
-const createPost = require('./create-post')
+const createPost = require('./create-post');
+const createComment = require('./create-comment');
+const deleteComment = require('./delete-comment');
 const {
   clientError,
   serverError,
@@ -18,6 +20,8 @@ module.exports = {
   logout,
   getPosts,
   createPost,
+  createComment,
+  deleteComment,
   clientError,
   serverError,
 };
