@@ -10,8 +10,7 @@ const createPost = (req, res) => {
         .then((post) => {
           res.json(post);
         });
-    }).catch((err) => {
-      console.log(err);
+    }).catch(() => {
       res.status(500).json({ message: 'internal server error' });
     });
 };
