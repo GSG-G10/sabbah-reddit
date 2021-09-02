@@ -1,11 +1,11 @@
 const { getUsersPosts } = require('../database/queries');
 
 const getProfile = (req, res) => {
-  const { username } = req.cookies;
+  const { username } = req.params;
   getUsersPosts(username).then((data) => {
     res.json(data);
   }).catch((err) => {
-    console.log(err.message);
+    res.status(500).json({ message: err.message });
   });
 };
 
