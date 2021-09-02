@@ -9,6 +9,7 @@ const getUsersQu = require('./get-users');
 const getUsersPosts = require('./get-users-posts');
 const getUser = require('./get-user');
 const checkIfMember = require('./checkIfMember');
+const { addLike, disLike } = require('./like');
 
 module.exports = {
   addCommentQu,
@@ -23,4 +24,6 @@ module.exports = {
   getUsersPosts,
   getUser,
   checkIfMember,
+  addLike,
+  disLike,
 };
