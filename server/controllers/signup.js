@@ -19,7 +19,7 @@ const createUser = (req, res) => {
     .then((obj) => {
       addUserQu(obj)
         .then(() => {
-          res.cookie('token', createSession(username, email), { httpOnly: true, secure: true });
+          res.cookie('token', createSession(username), { httpOnly: true, secure: true });
           res.cookie('username', username);
           res.redirect('/');
         }).catch((err) => {
