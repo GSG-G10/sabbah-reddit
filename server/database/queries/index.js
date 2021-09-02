@@ -3,7 +3,7 @@ const addUserQu = require('./add-user');
 const createPostQu = require('./create-post');
 const deletePostQu = require('./delete-post');
 const getCommentsQu = require('./get-comments');
-const getPostsQu = require('./get-posts');
+const {getPostsQu, getSinglePost} = require('./get-posts');
 const getUsersQu = require('./get-users');
 const getUsersPosts = require('./get-users-posts');
 const getUser = require('./get-user');
@@ -16,6 +16,7 @@ module.exports = {
   deletePostQu,
   getCommentsQu,
   getPostsQu,
+  getSinglePost,
   getUsersQu,
   getUsersPosts,
   getUser,
