@@ -5,8 +5,10 @@ const logout = require('./logout');
 const createSession = require('./create-session');
 const getPosts = require('./get-posts');
 const createPost = require('./create-post');
+const deletePost = require('./delete-post');
 const createComment = require('./create-comment');
 const deleteComment = require('./delete-comment');
+const { like, dislike } = require('./likes');
 const {
   clientError,
   serverError,
@@ -20,8 +22,11 @@ module.exports = {
   logout,
   getPosts,
   createPost,
+  deletePost,
   createComment,
   deleteComment,
+  like,
+  dislike,
   clientError,
   serverError,
 };
