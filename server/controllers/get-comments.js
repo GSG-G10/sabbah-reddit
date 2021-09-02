@@ -1,10 +1,11 @@
 const { getCommentsQu } = require('../database/queries');
 
-const getComments = (id) => {
-  getCommentsQu(id).then((data) => {
+const getComments = (req, res) => {
+  const { postId } = req.params;
+  getCommentsQu(postId).then((data) => {
     res.json(data);
   }).catch((err) => {
-    console.log(err.message);
+    res.status(500).json({ message: err.message });
   });
 };
 
