@@ -4,27 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reddit</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/f15fba9ca3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    Hello From Server
-    <form action="/signup" method="post">
-    <label for="username"> username
-        <input type="text" name="username">
-    </label>
-    <label for="firstName"> first name
-        <input type="text" name="firstName">
-    </label>
-    <label for="lastName"> last name
-        <input type="text" name="lastName">
-    </label>
-    <label for="email">email 
-        <input type="text" name="email">
-    </label>
-    <label for="password"> password 
-        <input type="password" name="password" id="pass">
-    </label>
-    <button type="submit">submit</button>
-    </form>
+    <header>
+        <div class="header">
+        <figure class="logo">
+            <img src="./images/logo.png" alt="logo" width="100%" height="100%">
+        </figure>
+        <nav class="nav">
+            <ul class="list">
+                <li class="login"><a href="./pages/login.html">Login</a></li>
+                <li id="signup-li"><a href="/signup"> Sign Up </a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <section>
+        <div class="container">
+             <div class="post-card">
+                <h2 class="fulname">
+                    Ahmad Sabbah
+                </h2>
+                <p class="username">ahmad-77</p>
+                <p class="post-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui cupiditate soluta reiciendis, nobis ex molestias dignissimos architecto esse hic vero excepturi dolorem beatae deleniti corporis temporibus quasi voluptatum dolore in?</p>
+                <img src="https://i.guim.co.uk/img/media/b4671b518cf9f81e4343c5921a6210141fd9f8fa/0_92_4284_2570/master/4284.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=75205a6a967abc32d73fc80b7b23b52a" alt="" class="post-img">
+                <div class="btns">
+                    <button><i class="fas fa-heart"></i> Like </button>
+                    <button><i class="far fa-comment"></i> Comments</button>
+                </div>
+            </div>
+                <div class="post-card">
+                    <h2 class="fulname">
+                        Ahmad Sabbah
+                    </h2>
+                    <p class="username">ahmad-77</p>
+                    <p class="post-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui cupiditate soluta reiciendis, nobis ex molestias dignissimos architecto esse hic vero excepturi dolorem beatae deleniti corporis temporibus quasi voluptatum dolore in?</p>
+                    <img src="https://i.guim.co.uk/img/media/b4671b518cf9f81e4343c5921a6210141fd9f8fa/0_92_4284_2570/master/4284.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=75205a6a967abc32d73fc80b7b23b52a" alt="" class="post-img">
+                    <div class="btns">
+                        <button>23<i class="fas fa-heart"></i> Like </button>
+                        <button><i class="far fa-comment"></i> Comments</button>
+                    </div>
+
+        </div>
+    </section>
 </body>
 </html>
