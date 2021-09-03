@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #dae0e6;
+}
+/* ********************** header style ********************** */
+header {
+    /* position: fixed; */
+    /* top: 0; */
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+}
+.logo {
+    width: 12%;
+    height: 90%;
+    padding-left: 10px;
+}
+.header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+li {
+    width: 30%;
+    height: 35px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #0079d3;
+    border-radius: 15px;
+}
+li a {
+    color: #0079d3;
+    font-weight: 600;
+    font-size: 20px;
+    width: 100%;
+    height: 75%;
+    text-align: center;
+}
+li a:hover {
+    font-weight: 400;
+    font-size: 15;
+}
+#signup-li {
+    background-color: #0079d3;
+}
+#signup-li a {
+    color: #fff;
+}
+#signup-li:hover {
+    background-color: #fff;
+}
+#signup-li a:hover {
+    color: #0079d3;
+}
+
+/* ********************* posts section style *************************** */
+section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.post-card {
+    background-color: #fff;
+    width: 90%;
+    margin-top: 50px;
+    border: solid #0079d3 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+}
+.username {
+    color: #0079d3;
+    cursor: pointer;
+}
+.post-content {
+    margin: 15px 10px;
+}
+.post-img {
+    max-width: 90%;
+    max-height: 80vh;
+}
+.btns {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.btns button {
+    width: 135px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color: #0079d3;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+.btns button:hover {
+    background-color: #dae0e6;
+}
+.fa-heart {
+    color: #dae0e6;
+}
+.active {
+    color: #0079d3;
+}
