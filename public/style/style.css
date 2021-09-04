@@ -8,8 +8,8 @@ body {
 }
 /* ********************** header style ********************** */
 header {
-    /* position: fixed; */
-    /* top: 0; */
+    /* position: fixed;
+    top: 0; */
     background-color: #fff;
     width: 100%;
     height: 60px;
@@ -51,11 +51,16 @@ li {
     align-items: center;
     border: solid 1px #0079d3;
     border-radius: 15px;
+    color: #0079d3;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+
 }
 li a {
     color: #0079d3;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
     height: 75%;
     text-align: center;
@@ -66,6 +71,7 @@ li a:hover {
 }
 #signup-li {
     background-color: #0079d3;
+    color: #fff;
 }
 #signup-li a {
     color: #fff;
@@ -78,9 +84,10 @@ li a:hover {
 }
 
 /* ********************* posts section style *************************** */
-section {
+.section {
     margin-top: 30px;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
 }
 .container {
@@ -94,7 +101,7 @@ section {
 .post-card {
     background-color: #fff;
     width: 90%;
-    margin-top: 50px;
+    margin-bottom: 20px;
     border: solid #0079d3 1px;
     display: flex;
     flex-direction: column;
@@ -137,4 +144,204 @@ section {
 }
 .active {
     color: #0079d3;
+}
+.likes-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0079d3;
+}
+/********************** Trending section********************** */
+.trending-head {
+    margin: 20px 0 20px 20px;
+
+}
+.trending {
+    width: 100%;
+    height: 30vh;
+    padding: 5px 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.trending-divs {
+height: 100%;
+width: 20%;
+position: relative;
+border-radius: 10px;
+
+}
+.trending-divs img {
+    width: 100%;
+    height: 100%;
+    
+}
+.browse {
+    display: none;
+}
+.trending-divs p {
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+}
+/**************** for profile page *************************/
+.profile-main-section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+.right-side {
+    width: 25%;
+}
+.user-information {
+    background-color: #fff;
+    border-radius: 15px;
+    height: 50vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.profile-img {
+    width: 60%;
+    height: 40%;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+.settings {
+    width: 40%;
+    height: 25px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color: #0079d3;
+    cursor: pointer;
+    font-size: 20px;
+}
+.settings:hover {
+    background-color: #dae0e6;
+}
+.footer {
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+}
+.child-footer {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-between;
+}
+.delete {
+    width: 100px;
+    height: 25px;
+    outline: none;
+    border: none;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+/* ************** Single post ****************** */
+.save {
+    width: 100px;
+    height: 25px;
+    outline: none;
+    border: none;
+    background-color: #0079d3;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 10px;
+}
+.comment-box {
+    width: 80%;
+    border: 1px solid #0079d3;
+    padding: 10px;
+}
+/* Media Queries */
+@media screen and (max-width: 900px) {
+    li a {
+        font-size: 15px;
+    }
+    li {
+        font-size: 15px;
+    }
+    .footer {
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav {
+        width: 60%;
+    }
+    .trending-divs p {
+        font-size: 12px;
+    }
+    .section {
+        flex-direction: column-reverse;
+    }
+    .section .container {
+        width: 100%;
+    }
+    .section .right-side {
+        width: 100%;
+        margin-left: 5%;
+
+
+    }
+    .footer {
+        justify-content: space-around;
+    }
+    .profile-media {
+        flex-direction: column;
+    }
+    .profile-media .footer {
+        display: none;
+    }
+    .profile-media .right-side {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .logo {
+        width: 30%;
+
+    }
+    .nav li {
+        width: 20%;
+        font-size: 20px;
+    }
+    .nav li a {
+        display: none;
+    }
+    #login-a, #signup-a {
+        display: inline;
+        font-size: 12px;
+
+    }
+    .trending-divs {
+        display: none;
+    }
+    .browse {
+        display: block;
+        color: #0079d3;
+    }
+    .trending {
+        height: 50px;
+    }
+    
 }
