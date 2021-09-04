@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/create-form.css">
+    <script src="https://kit.fontawesome.com/f15fba9ca3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="header">
+        <figure class="logo">
+            <img src="../images/logo.png" alt="logo" width="100%" height="100%">
+        </figure>
+        <nav class="nav">
+            <ul class="list">
+                <li class="home-li"><a href="/home"> Home </a></li>
+                <li class="login"><a href=""><i class="fas fa-plus"></i> Create Post</a></li>
+                <li id="signup-li"><a href="/logout"> <i class="fas fa-sign-out-alt"></i> Logout </a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+        <!-- Popup add form -->
+        <div class="add-form-container ">
+            <h2 class="form-title">Create Post</h2>
+            <div class="popup-form-container">
+                <form action="/add-book" method="POST" class="add-form">
+                    <label for="post-text"> Post  </label>
+                    <textarea id="post-text" name="postText" rows="4" cols="50">
+
+                    </textarea>
+    
+                    <label for="book-img-input"> Image  </label>
+                    <input type="url" name="imageUrl" id="post-img-input" placeholder="Image URL" required />
+                </form>
+                <div class="form-btns">
+                    <button class="save" type="submit"> Post</button>
+                    <button class="cancel">cancel</button>
+                </div>
+            </div>
+        </div>
+        <div class="content-hider"></div>
+        <!-- Confirm Form -->
+        <div class="confirm-container">
+            <p>Are you sure you want to delete this post?</p>
+            <div class="confirm-btns">
+                <button class="cancel">Cancel</button>
+                <button class="ok">Ok</button>
+            </div>
+        </div>
+        <!-- End Confirm Form -->
+     <section class="section profile-main-section profile-media">
+         <!-- rigt side -->
+         <div class="right-side">
+
+             <div class="user-information">
+                 <figure class="profile-img">
+                     <img src="https://www.nicepng.com/png/detail/136-1366211_group-of-10-guys-login-user-icon-png.png" alt="profile-photo" width="100%" height="100%">
+                 </figure>
+                 <div class="name">
+                     <h3>Ahmad Sabbah </i></h3>
+                     <p class="username-profile">ahmad-77</p>
+                 </div>
+                 <button class="settings">settings</button>
+             </div>
+             <div class=" user-information footer">
+                 <div class="child-footer">
+
+                     <a href="">About</a>
+                     <a href=""> Career </a>
+                     <a href=""> Press </a>
+                     <a href=""> Advertise </a>
+                     <a href=""> Communities </a>
+                     <a href=""> Teams </a>
+                     <a href=""> Content </a>
+                     <a href=""> Policy </a>
+                     <a href=""> Privacy </a>
+                     <a href=""> Mod </a>
+                     <a href=""> Blog </a>
+                 </div>
+                 <div class="child-footer">
+
+                     <a href=""> Help </a>
+                     <a href=""> Reddit Coins </a>
+                     <a href=""> Reddit Premium </a>
+                     <a href=""> Reddit Gifts </a>
+                     <a href=""> Communities </a>
+                     <a href=""> Rereddit </a>
+                     <a href=""> Topics </a>
+                 </div>
+
+             </div>
+         </div>
+        <div class="container">
+            <div class="post-card">
+                <h2 class="fulname">
+                    Ahmad Sabbah
+                </h2>
+                <p class="username">ahmad-77</p>
+                <p class="post-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui cupiditate soluta reiciendis, nobis ex molestias dignissimos architecto esse hic vero excepturi dolorem beatae deleniti corporis temporibus quasi voluptatum dolore in?</p>
+                <img src="https://i.guim.co.uk/img/media/b4671b518cf9f81e4343c5921a6210141fd9f8fa/0_92_4284_2570/master/4284.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=75205a6a967abc32d73fc80b7b23b52a" alt="" class="post-img">
+                <div class="btns">
+                       <div class="likes-btn">
+                           
+                           <button><i class="fas fa-heart"></i> Like </button>
+                           <p class="likes-num">23 likes</p>
+                        </div>
+                        <button><i class="far fa-comment"></i> Comments</button>
+                    </div>
+                    <button class="delete"> Delete Post</button>
+                </div>
+                <div class="post-card">
+                <h2 class="fulname">
+                    Ahmad Sabbah
+                </h2>
+                <p class="username">ahmad-77</p>
+                <p class="post-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui cupiditate soluta reiciendis, nobis ex molestias dignissimos architecto esse hic vero excepturi dolorem beatae deleniti corporis temporibus quasi voluptatum dolore in?</p>
+                <img src="https://i.guim.co.uk/img/media/b4671b518cf9f81e4343c5921a6210141fd9f8fa/0_92_4284_2570/master/4284.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=75205a6a967abc32d73fc80b7b23b52a" alt="" class="post-img">
+                <div class="btns">
+                    <div class="likes-btn">
+
+                        <button><i class="fas fa-heart"></i> Like </button>
+                        <p class="likes-num">23 likes</p>
+                    </div>
+                    <button><i class="far fa-comment"></i> Comments</button>
+                </div>
+            </div>
+            </div>
+    </section>
+</body>
+</html>
