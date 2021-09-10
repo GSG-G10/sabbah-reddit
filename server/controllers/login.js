@@ -18,7 +18,7 @@ const login = (req, res) => {
             res.clearCookies('token', 'username');
             res.cookie('token', createSession(username), { httpOnly: true, secure: true });
             res.cookie('username', username);
-            res.redirect('/');
+            res.redirect('/home');
           } else res.status(401).send('invalid username or password');
         });
       }
