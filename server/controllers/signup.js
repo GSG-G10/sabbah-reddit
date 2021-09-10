@@ -1,8 +1,8 @@
 const { addUserQu } = require('../database/queries');
 const { hashPassword } = require('./hashPassword');
-const { createSession } = require('./index');
 
 const createUser = (req, res) => {
+  const { createSession } = require('./index');
   const {
     username, firstName, lastName, email, password,
   } = req.body;
@@ -21,7 +21,7 @@ const createUser = (req, res) => {
         .then(() => {
           res.cookie('token', createSession(username), { httpOnly: true, secure: true });
           res.cookie('username', username);
-          res.redirect('/');
+          res.redirect('/home');
         }).catch((err) => {
           res.status(500).json(err.message);
         });
