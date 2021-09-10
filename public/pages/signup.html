@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/login.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/login.css" />
+  </head>
+  <body>
     <header>
-        <div class="header">
+      <div class="header">
         <figure class="logo">
-            <img src="../images/logo.png" alt="logo" width="100%" height="100%">
+          <img src="../images/logo.png" alt="logo" width="100%" height="100%" />
         </figure>
         <nav class="nav">
-            <ul class="list">
-                <li id="signup-li"><a href="login.html"> Login </a></li>
-            </ul>
+          <ul class="list">
+            <li id="signup-li"><a href="login.html"> Login </a></li>
+          </ul>
         </nav>
-    </div>
+      </div>
     </header>
-    <section>
-        <div class="signup-container">
-            <h2>
-                Sign Up
-            </h2>
-            <form action="/signup" method="post" class="signup-form">
-                <div class="input-cont">
-                <label for="signup-username"> username
-                    <input type="text" name="username" id="signup-username">
-                </label></div>
-                <div class="input-cont">
-                <label for="first-name"> first name
-                    <input type="text" name="firstName" id="first-name">
-                </label></div>
-                <div class="input-cont">
-                <label for="last-name"> last name
-                    <input type="text" name="lastName" id="last-name">
-                </label></div>
-                <div class="input-cont">
-                <label for="signup-email">email 
-                    <input type="text" name="email" id="signup-email">
-                </label></div>
-                <div class="input-cont">
-                <label for="signup-password"> password 
-                    <input type="password" name="password" id="signup-password">
-                </label></div>
-                <p class="validation"></p>
-                <button type="submit">Sign Up</button>
-                <p class="hint">
-                    You already have account? <a href="./login.html">Login</a>
-                </p>
-                </form>
-        </div>
+    <section class="section">
+      <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form action="/signup" method="post" class="signup-form">
+          <div class="input-cont">
+            <label for="signup-username">
+              username
+              <input type="text" name="username" id="signup-username" />
+            </label>
+          </div>
+          <div class="input-cont">
+            <label for="first-name">
+              first name
+              <input type="text" name="firstName" id="first-name" />
+            </label>
+          </div>
+          <div class="input-cont">
+            <label for="last-name">
+              last name
+              <input type="text" name="lastName" id="last-name" />
+            </label>
+          </div>
+          <div class="input-cont">
+            <label for="signup-email"
+              >email
+              <input type="text" name="email" id="signup-email" />
+            </label>
+          </div>
+          <div class="input-cont">
+            <label for="signup-password">
+              password
+              <input type="password" name="password" id="signup-password" />
+            </label>
+          </div>
+          <p class="validation"></p>
+          <button type="submit">Sign Up</button>
+          <p class="hint">
+            You already have account? <a href="./login.html">Login</a>
+          </p>
+        </form>
+      </div>
     </section>
-</body>
+  </body>
 </html>
