@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>reddit</title>
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/login.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/login.css" />
+  </head>
+  <body>
     <header>
-        <div class="header">
+      <div class="header">
         <figure class="logo">
-            <img src="../images/logo.png" alt="logo" width="100%" height="100%">
+          <img src="../images/logo.png" alt="logo" width="100%" height="100%" />
         </figure>
         <nav class="nav">
-            <ul class="list">
-                <li id="signup-li"><a href="/signup"> Sign Up </a></li>
-            </ul>
+          <ul class="list">
+            <li id="signup-li"><a href="./signup.html"> Sign Up </a></li>
+          </ul>
         </nav>
-    </div>
+      </div>
     </header>
     <section class="section">
-        <div class="form-container">
+      <div class="form-container">
         <h2>Login</h2>
         <form action="/login" method="post" class="login-form">
-            <div class="input-cont">
-        <label for="username"> Username:
-           <input type="text" name="username" placeholder="Type username here .." id="lgin-username" required>
-        </label>
-    </div>
-    <div class="input-cont">
-        <label for="password"> Password: 
-            <input type="password" name="password" placeholder="password" id="password" required>
-        </label></div>
-        <p class="validation"></p>
-        <button type="submit" class="login"> Login </button>
-        <p class="hint">
+          <div class="input-cont">
+            <label for="username">
+              Username:
+              <input
+                type="text"
+                name="username"
+                placeholder="Type username here .."
+                id="lgin-username"
+                required
+              />
+            </label>
+          </div>
+          <div class="input-cont">
+            <label for="password">
+              Password:
+              <input
+                type="password"
+                name="password"
+                placeholder="password"
+                id="password"
+                required
+              />
+            </label>
+          </div>
+          <p class="validation"></p>
+          <button type="submit" class="login">Login</button>
+          <p class="hint">
             You don't have account? <a href="./signup.html">Signup</a>
-        </p>
+          </p>
         </form>
-        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>

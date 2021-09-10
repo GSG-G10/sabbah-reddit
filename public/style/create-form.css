@@ -1,146 +1,144 @@
 /* pop up form  */
 .add-form-container {
-    text-align: center;
-    width: 60%;
-    height: 70vh;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 15px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    display: none;
-  }
-  .add-form-container.active {
-    display: inline;
-  }
-  .content-hider {
-    width: 100vw;
-    height: 100vh;
-    background-color: #060606;
-    opacity: 41%;
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .content-hider.active {
-    display: block;
-  }
-  .fa-times-circle {
-    float: right;
-  }
-  .form-title {
-    clear: right;
-    margin-bottom: 25px;
-    font-size: 20px;
-  }
-  .add-form {
-    width: 90%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-    margin-left: 5%;
-  }
-  .add-form label {
-    align-self: flex-start;
-    margin: 5px 0;
-  }
-  .add-form input {
-    background-color: #dddddd;
-    border: none;
-    outline: none;
-    height: 30px;
-    width: 100%;
-    padding-left: 10px;
-  }
+  text-align: center;
+  width: 60%;
+  height: 70vh;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: none;
+}
+.add-form-container.active {
+  display: inline;
+}
+.content-hider {
+  width: 100vw;
+  height: 100vh;
+  background-color: #060606;
+  opacity: 41%;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.content-hider.active {
+  display: block;
+}
+.fa-times-circle {
+  float: right;
+}
+.form-title {
+  clear: right;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.add-form {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-left: 5%;
+}
+.add-form label {
+  align-self: flex-start;
+  margin: 5px 0;
+}
+.add-form input {
+  background-color: #dddddd;
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 100%;
+  padding-left: 10px;
+}
 
-  .add-form textarea {
-    background-color: #dddddd;
-    height: 150px;
-    border: none;
-    outline: none;
-    margin-bottom: 20px;
+.add-form textarea {
+  background-color: #dddddd;
+  height: 150px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+}
+.popup-form-container {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.form-btns {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.form-btns button {
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.cancel {
+  color: #000;
+  font-size: 20px;
+}
+.save {
+  background-color: #0079d3;
+  font-size: 20px;
+  color: #fff;
+}
 
-  }
-  .popup-form-container {
-    width: 90%;
-    margin: 10px auto;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  .form-btns {
-    width: 90%;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .form-btns button {
-    height: 30px;
-    width: 100px;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    margin-right: 5px;
-  }
-  .cancel {
-    color: #000;
-    font-size: 20px;
-  }
-  .save {
-    background-color: #0079d3;
-    font-size: 20px;
-    color: #fff;
-  }
-
-  /* Confirm Form */
-  .confirm-container {
-    background-color: #fff;
-    width: 50vw;
-    height: 30vh;
-    padding: 15px;
-    border-radius: 15px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    display: none;
-  }
-  .confirm-container.active {
-    display: inline;
-  }
-  .confirm-container p {
-    font-size: 25px;
-  }
-  .confirm-container button {
-    height: 30px;
-    width: 100px;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    margin-right: 5px;
-  }
-  .confirm-container .cancel {
-    color: #0079d3;
-    background-color: #fff;
-
-  }
-  .confirm-container .cancel:hover {
-    background-color: #dddddd;
-  }
-  .confirm-container .ok {
-    background-color: #0079d3;
-    color: #fff;
-    font-size: 20px;
-  }
-  .confirm-btns {
-    position: absolute;
-    bottom: 25px;
-    right: 60px;
-  }
+/* Confirm Form */
+.confirm-container {
+  background-color: #fff;
+  width: 50vw;
+  height: 30vh;
+  padding: 15px;
+  border-radius: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: none;
+}
+.confirm-container.active {
+  display: inline;
+}
+.confirm-container p {
+  font-size: 25px;
+}
+.confirm-container button {
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.confirm-container .cancel {
+  color: #0079d3;
+  background-color: #fff;
+}
+.confirm-container .cancel:hover {
+  background-color: #dddddd;
+}
+.confirm-container .ok {
+  background-color: #0079d3;
+  color: #fff;
+  font-size: 20px;
+}
+.confirm-btns {
+  position: absolute;
+  bottom: 25px;
+  right: 60px;
+}
